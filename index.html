@@ -11,8 +11,26 @@
 </head>
 <body>
 
+    <nav>
+        <div class="container">
+            <div>
+                <label for="close">X</label>
+                <input type="checkbox" name="close" id="close">
+            </div>
+            
+            <div class="options">
+                <ul>
+                    <li><a href="">Cadastro de transações</a></li>
+                    <li><a href="">Limpar dados</a></li>
+                    <li><a href="">Configurações</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
    <header>
         <div class="header">
+
             <div class="logo"> 
                 <img src="./assets/images/logo.png" alt="logo">
             </div> 
@@ -21,19 +39,22 @@
                 <h1>Controle Financeiro</h1>
             </div>
 
-            <div class="menu">
-               <span>☰</span>
+            <div class="menu-image">
+                <label for="hamburger">☰</label>
+                <input type="checkbox" name="hamburger" id="hamburger">
             </div>
+        
         </div>
+
     </header>
+
+
     <main>
         <div class="container">
             <div class="form">
                 <form action="">
                     <div>
                         <label for="trans">Tipo de transação</label>
-                    </div>
-                    <div>
                         <select name="trans" id="trans">
                             <option value="Compra" selected>Compra</option>
                             <option value="Venda">Venda</option>
@@ -41,8 +62,6 @@
                     </div>
                     <div>
                         <label for="merc">Nome da mercadoria</label>
-                    </div>
-                    <div>
                         <input type="text" id="merc" name="merc">
                     </div>
                     <div>
@@ -54,7 +73,7 @@
 
         <div class="container">
             <div class="report">
-                <p><strong>Extrato de transações</strong></p>
+                <p>Extrato de transações</p>
                 <table>
                     <tr>
                         <th></th>
@@ -79,7 +98,7 @@
                     <tr>
                         <td></td>
                         <td><strong>Total</strong></td>
-                        <td style="text-align: right;"><strong>R$ 12.909,99</strong><span class="result">[LUCRO]</span></td>
+                        <td class="total">R$ 12.909,99<p class="result">[LUCRO]</p></td>
                     </tr>
                 </table>
             </div>
