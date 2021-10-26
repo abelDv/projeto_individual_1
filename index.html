@@ -13,48 +13,37 @@
     <title>Projeto Individual</title>
 </head>
 <body>
-
-    <nav>
-        <div class="container">
-            <div>
-                <label for="close">X</label>
-                <input type="checkbox" name="close" id="close">
-            </div>
-            
-            <div class="options">
-                <ul>
-                    <li><a href="">Cadastro de transações</a></li>
-                    <li><a href="">Limpar dados</a></li>
-                    <li><a href="">Configurações</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
    <header>
         <div class="header">
-
-            <div class="logo"> 
-                <img src="./assets/images/logo.png" alt="logo">
-            </div> 
-                
-            <div class="center-header">
-                <h1>Controle Financeiro</h1>
-            </div>
-
-            <div class="menu-image">
-                <label for="hamburger">☰</label>
-                <input type="checkbox" name="hamburger" id="hamburger">
-            </div>
         
-        </div>
+                <img src="./assets/images/logo.png" alt="logo">
 
+                <h1>Controle Financeiro</h1>
+      
+                <label for="interactive" class="hamburger">☰</label>
+                <input type="checkbox" name="interactive" id="interactive">    
+
+
+            <nav>
+                <div class="button-close">
+                    <label for="interactive">X</label>
+                </div>
+
+                <div class="options">
+                    <ul>
+                        <li><a href="">Cadastro de transações</a></li>
+                        <li><a href="">Limpar dados</a></li>
+                        <li><a href="">Configurações</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
 
     <main>
 
-        <div class="container">
+        <div class="container-form">
             <div class="form">
                 <form action="">
                     <div>
@@ -69,13 +58,17 @@
                         <input type="text" id="merc" name="merc">
                     </div>
                     <div>
+                        <label for="value">Valor</label>
+                        <input type="text" id="value" name="value">
+                    </div>
+                    <div>
                         <input type="submit" value="Adicionar Transação" class="button-submit">
                     </div>
                 </form> 
             </div>
         </div>
         
-       <div class="container">
+       <div class="container-report">
             <div class="report">
                 <p>Extrato de transações</p>
                 <table>
@@ -99,7 +92,7 @@
                         <td>Lorem ipsum </td>
                         <td style="text-align: right;">R$ 9,99 </td>
                     </tr>
-                    <tr>
+                    <tr style="border-bottom-style: double;">
                         <td></td>
                         <td><strong>Total</strong></td>
                         <td class="total" >R$ 12.909,99<p class="result">[LUCRO]</p></td>
